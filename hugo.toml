@@ -1,0 +1,4 @@
+baseURL = ''
+relativeURL = true
+languageCode = 'ar'
+title = 'My New Hugo Site'

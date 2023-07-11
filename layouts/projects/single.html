@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ partial "header" . }}
+<div class="project">
+    <div class="project-container">
+        <div class="project-title-container">
+            <h2>{{.Title}}</h2>
+        </div>        
+        <div class="project-intro">
+            {{.Content}}
+        </div>
+        <div class="project-gallery">
+            <h2>صور المشروع</h2>
+            <div class="gallery-container">
+                <img src="{{.Params.image1}}" alt="project-image" class="project-image">
+                <div class="other-images">
+                    <img src="{{.Params.image2}}" alt="project-image" class="project-image">
+                    <img src="{{.Params.image3}}" alt="project-image" class="project-image">
+                    <img src="{{.Params.image4}}" alt="project-image" class="project-image">
+                    <img src="{{.Params.image5}}" alt="project-image" class="project-image">
+                </div>
+            </div>
+        </div>
+        <div class="layer">
+            <div class="layer-container">
+                <i class="far fa-times-circle"></i>
+                <img alt="صورة المشروع">
+            </div>
+        </div>
+    </div>
+</div>
+{{ partial "footer" . }}
+{{ end }}
